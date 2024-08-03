@@ -12,9 +12,13 @@ body {
 }
 
 .header {
+	background-color: green;
 
 }
 
 .menu {
+	display: inline-block;
 	background-color: red;
+	position: fixed;
+	
 }
