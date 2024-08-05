@@ -1,29 +1,46 @@
 * {
-
+	box-sizing: border-box;
 
 }
 
 body {
-	background-color: #eeeeee;
-	color: #000000 ;
+	background-color: #000000;
+	color: #dbdada ;
 	font-family: "Averia Serif Libre", serif;
   	font-weight: 800;
   	font-style: normal;
-  	font-size: 18px;
+  	font-size: 20px;
 }
 
+#root {
+	display: flex;
+}
 .header {
+	font-size: 22px;
 }
 
 .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: inline-block;
+    float: right;
     padding: 15px 20px;
+    background-color: #1F2021;
+    border-bottom-left-radius: 26px;
+    border-top-right-radius: 26px;
 }
 
 .header__title {
-	padding-left: 10px;
+	padding-left: 50px;
+	display: inline-block;
+}
+
+.header__line {
+	margin: 100px;
+	display: inline-block;
+	background-color: yellow;
+	padding: 2px;
+	margin-top: 10px;
+    height: 2px;
+    width: 70px;
 }
 
 .nav {
@@ -47,24 +64,215 @@ body {
 }
 
 .nav__li a {
-	color: #000000;
+	color: #dbdada;
 	text-decoration: none;	
 }
 
+/*=============================================================*/
+
+
+.aside {
+	width: 25%;
+	height: 1200px;
+	margin: 100px 30px;
+	padding: 30px;
+	background-color: #2C2C2D;
+	border-radius: 26px;
+	display: flex;
+    flex-direction: column;
+}
+
+.memoji-container {
+	background-color: grey;
+	margin: 40px;
+	border-radius: 16px;
+}
+
+.memoji-container img{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	
+}
+
+.name {
+	text-align: center;
+}
+
+.degree {
+	padding: 5px;
+	margin: 12px;
+ 	text-align: center;
+	background-color: #1F2021;
+	border-radius: 6px;
+}
+
+.aside-line{
+	background-color: #1F2021;
+	padding: 2px;
+	border-radius: 26px;
+}
+
+
+.contact-container {
+	padding: 20px;
+}
+
+.contact-item {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+		
+}
+
+.contact-info {
+	flex: 1;
+	font-size: 19px;
+	text-align: left;
+}
+
+.contact-image {
+	flex: 0 1 auto;
+}
+
+.contact-image img{
+}
+
+
+
+.main {
+	position: relative;
+	width: 65%;
+	height: 1200px;
+	margin: 100px 30px;
+	background-color: #2C2C2D;
+	border-radius: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 16px;
+    columns: 3;
+    column-gap: 26px;
     padding: 16px;
-    margin: 16px;
+    margin: 20px 100px ;
     border-radius: 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+*/
 }
 
 .grid-item {
+	width: 100%;
+	padding: 20px;
+	margin-bottom: 10px;
+	break-inside: avoid;
     background-color: #dbdada;
-    padding: 16px;
+    border-radius: 15px;
+    text-align: left;
+    font-size: 23px;
+    color: #000000
+}
+
+.grid-item:hover {
+	transform: scale(1.05);
+	margin-bottom: 20px;
+}
+
+.grid-img:hover {
+	transform: scale(1.05);
+	margin-bottom: 20px;
+}
+
+.grid-item img {
+	max-width: 10%;	
+	margin: 10px;
+}
+
+.grid-item-text	{
+	margin-bottom: 40px;
+}
+
+
+.grid-img {
+	position: relative;
+	width: 100%;
+	margin-bottom: 10px;
+	break-inside: avoid;
     border-radius: 15px;
     text-align: center;
-    font-size: 16px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.grid-img img {
+	border-radius: 15px;
+	text-align: center;
+	max-width: 100%;	
+	max-height: 100%;
+	object-fit: contain;
+}
+
+.centered  {
+	position: absolute;
+ 	top: 50%;
+ 	left: 50%;
+ 	transform: translate(-50%, -50%);
+
+}
+
+@media (max-width: 1200px){
+
+
+}
+
+/*=================================MIS PROYECTOS==============================================*/
+
+
+.cards-container {
+	padding-top: 30px;
+	display: flex;
+	overflow: hidden;
+	width: 90%;
+	margin: auto;
+}
+
+
+.cards {
+	position: relative;
+	text-align: center;
+	flex: 1; cursor: pointer;
+	transition: 0.5s ease;
+	height: 200px;
+	outline-width: 5px;
+	margin-right: 10px;
+	outline-color: #000000;
+	background-color: lightblue;
+}
+
+
+.cards:hover {
+	flex: 3;
+	transition: 0.5s ease;
 }
