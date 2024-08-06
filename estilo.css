@@ -16,7 +16,7 @@ body {
 	display: flex;
 }
 .header {
-	font-size: 22px;
+	font-size: 20px;
 }
 
 .menu {
@@ -34,11 +34,11 @@ body {
 }
 
 .header__line {
-	margin: 100px;
+	margin: 20px;
 	display: inline-block;
-	background-color: yellow;
+	background-color: #F2D000 ;
+	margin-left: 120px;
 	padding: 2px;
-	margin-top: 10px;
     height: 2px;
     width: 70px;
 }
@@ -55,12 +55,16 @@ body {
 }
 
 .nav__li:hover > a {
-
+  color: #F2D000 ;
 }
 
 .nav__li:hover {
 	
 
+}
+
+.navbar-nav>.active>a {
+	color: #F2D000 ;
 }
 
 .nav__li a {
@@ -72,9 +76,9 @@ body {
 
 
 .aside {
-	width: 25%;
-	height: 1200px;
-	margin: 100px 30px;
+	width: 20%;
+	height: 850px;
+	margin: 100px 30px 0px 100px;
 	padding: 30px;
 	background-color: #2C2C2D;
 	border-radius: 26px;
@@ -115,29 +119,64 @@ body {
 
 
 .contact-container {
+	position: relative;
 	padding: 20px;
 }
 
 .contact-item {
 	display: flex;
+	position: relative;
 	align-items: center;
 	padding: 20px;
 		
 }
 
+.contact-title {
+	position: absolute;
+  	top: 24px;
+  	left: 87px;
+}
+
 .contact-info {
+
 	flex: 1;
 	font-size: 19px;
-	text-align: left;
+	position: absolute;
+  	top: 54px;
+  	left: 87px;
 }
 
 .contact-image {
 	flex: 0 1 auto;
+	width: 50px;
+	margin-right: 15px;
+	padding: 5px;
+	outline: 3px solid #1F2021;
+	border-radius: 16px;
+
 }
 
 .contact-image img{
 }
 
+
+.socialmedia-container {
+	display: flex;
+	justify-content: center; 
+    align-items: center; 
+}
+
+.socialmedialogo {
+	
+	margin: 5px;
+	text-align: center;
+}
+
+.log {
+	padding: 5px;
+	text-decoration: none;
+	color: grey;
+}
 
 
 .main {
@@ -149,10 +188,45 @@ body {
 	border-radius: 26px;
 }
 
+.article {
+	padding: 20px;
+	margin:  0px 40px;
+	background-color:
+}
 
+.titles-container {
+	display: flex;
+	position: relative;
+	align-items: center;
+	padding: 20px;
+	background-color: #1F2021;
+	margin: 5px;
+	border-radius: 26px;
+	width: 45%;
+}
 
+.titles-title {
+	flex: 1;
+	font-size: 19px;
+	position: absolute;
+  	top: 14px;
+  	left: 87px;
+}
 
+.titles-text {
+	flex: 1;
+	font-size: 19px;
+	position: absolute;
+  	top: 34px;
+  	left: 87px;
+}
 
+.titles-image {
+	flex: 0 1 auto;
+	width: 50px;
+	margin-right: 15px;
+	padding: 5px;
+}
 
 
 
@@ -251,24 +325,22 @@ body {
 
 
 .cards-container {
-	padding-top: 30px;
 	display: flex;
 	overflow: hidden;
-	width: 90%;
+	width: 100%;
 	margin: auto;
 }
 
 
 .cards {
+	width: 100%;
 	position: relative;
 	text-align: center;
 	flex: 1; cursor: pointer;
 	transition: 0.5s ease;
-	height: 200px;
-	outline-width: 5px;
-	margin-right: 10px;
-	outline-color: #000000;
-	background-color: lightblue;
+	height: 220px;
+	margin: 5px;
+	background-color: #1F2021;
 }
 
 
