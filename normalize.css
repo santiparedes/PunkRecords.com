@@ -53,6 +53,17 @@ h2 {
   
 }
 
+h4 {
+  font-size: 19px;
+  
+}
+
+p {
+  padding: 5px 0px;
+  font-size: 15px;
+  
+}
+
 /* Grouping content
    ========================================================================== */
 
@@ -177,7 +188,7 @@ textarea {
   font-family: inherit; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+   /* 2 */
 }
 
 /**
