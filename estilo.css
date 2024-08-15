@@ -1,10 +1,10 @@
 * {
 	box-sizing: border-box;
-
+	line-height: 24px;
 }
 
 body {
-	background-color: #000000;
+	background-color: 	rgb(19, 18, 18);
 	color: #dbdada ;
 	font-family: "Averia Serif Libre", serif;
   	font-weight: 800;
@@ -12,59 +12,58 @@ body {
   	font-size: 20px;
 }
 
+i {
+	display: inline-block;
+	color: #DAA520;
+}
+
+a {
+	text-decoration: none;
+	color: #dbdada ;
+}
+
+article i {
+	position: relative;
+	left: -10px;
+}
+
+article h2{
+	margin-left: 5px;
+	display: inline-block;
+}
 #root {
 	display: flex;
-}
-.header {
-	font-size: 20px;
 }
 
 .menu {
     display: inline-block;
-    float: right;
+    background-color: #28282B;
     padding: 15px 20px;
-    background-color: #1F2021;
-    border-bottom-left-radius: 26px;
-    border-top-right-radius: 26px;
+    float: right;
+    border-radius: 0px 26px 0px 26px;  
 }
 
 .header__title {
-	padding-left: 50px;
 	display: inline-block;
+	padding-left: 50px;
 }
 
 .header__line {
-	margin: 20px;
 	display: inline-block;
-	background-color: #F2D000 ;
-	margin-left: 120px;
+	background-color:#DAA520 ;
+	margin: 20px 20px 20px 120px;
 	padding: 2px;
-    height: 2px;
     width: 70px;
-}
-
-.nav {
-
 }
 
 .nav__li {
 	display: inline-block;
-	text-align:center;
 	padding: 2px;
 	margin: 12px;
 }
 
 .nav__li:hover > a {
-  color: #F2D000 ;
-}
-
-.nav__li:hover {
-	
-
-}
-
-.navbar-nav>.active>a {
-	color: #F2D000 ;
+  color: #DAA520 ;
 }
 
 .nav__li a {
@@ -72,63 +71,53 @@ body {
 	text-decoration: none;	
 }
 
-/*=============================================================*/
+
+/*======================================Aside=======================*/
 
 
 .aside {
-	width: 20%;
-	height: 850px;
-	margin: 100px 30px 0px 100px;
-	padding: 30px;
-	background-color: #2C2C2D;
-	border-radius: 26px;
+	background-color: #1F2021;
 	display: flex;
     flex-direction: column;
-}
-
-.memoji-container {
-	background-color: grey;
-	margin: 40px;
-	border-radius: 16px;
-}
-
-.memoji-container img{
-	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-	
-}
-
-.name {
+	width: 20%;
+	height: 850px;
+	margin: 100px 10px 0px 100px;
+	padding: 30px;
+	border-radius: 26px;
 	text-align: center;
 }
 
+.name-container {
+	
+}
+
+.memoji-container {
+	background-color:#28282B;
+	width: 60%;
+	margin: 25px auto;
+	border-radius: 16px;
+}
+
 .degree {
-	padding: 5px;
-	margin: 12px;
- 	text-align: center;
-	background-color: #1F2021;
+	background-color: #28282B;
+	width: 57%;
+	padding: 6px;
+	margin: 12px auto;
 	border-radius: 6px;
 }
 
 .aside-line{
-	background-color: #1F2021;
+	background-color: #28282B;
 	padding: 2px;
+	margin-bottom: 20px;
 	border-radius: 26px;
-}
-
-
-.contact-container {
-	position: relative;
-	padding: 20px;
 }
 
 .contact-item {
 	display: flex;
 	position: relative;
-	align-items: center;
 	padding: 20px;
-		
+	font-size: 18px;	
 }
 
 .contact-title {
@@ -138,53 +127,42 @@ body {
 }
 
 .contact-info {
-
 	flex: 1;
-	font-size: 19px;
 	position: absolute;
-  	top: 54px;
+  	top: 50px;
   	left: 87px;
+  	text-align: left;
 }
 
-.contact-image {
-	flex: 0 1 auto;
-	width: 50px;
-	margin-right: 15px;
-	padding: 5px;
-	outline: 3px solid #1F2021;
-	border-radius: 16px;
-
+.contact-image i{
+	background-color: #28282B;;
+	padding: 15px;
+	border-radius: 6px;
 }
-
-.contact-image img{
-}
-
 
 .socialmedia-container {
 	display: flex;
 	justify-content: center; 
-    align-items: center; 
+    margin-top: 10px;
 }
 
 .socialmedialogo {
-	
-	margin: 5px;
-	text-align: center;
+	margin: 3px;
+	padding: 5px;
 }
 
-.log {
-	padding: 5px;
-	text-decoration: none;
+.socialmedialogo i {
 	color: grey;
+	text-decoration: none;
 }
+
+/*======================================Main====================================*/
 
 
 .main {
-	position: relative;
 	width: 65%;
-	height: 1200px;
-	margin: 100px 30px;
-	background-color: #2C2C2D;
+	margin: 100px 10px;
+	background-color: #1F2021;
 	border-radius: 26px;
 }
 
@@ -195,156 +173,292 @@ body {
 }
 
 .titles-container {
-	display: flex;
 	position: relative;
-	align-items: center;
+}
+
+.titles-item {
+	position: relative;
+	display: inline-flex;
 	padding: 20px;
-	background-color: #1F2021;
+	background-color: #28282B;
 	margin: 5px;
 	border-radius: 26px;
-	width: 45%;
+	width: 48.7%;
+	height: 140px;
+
 }
 
 .titles-title {
 	flex: 1;
-	font-size: 19px;
 	position: absolute;
-  	top: 14px;
-  	left: 87px;
+	left: 80px;
+	font-size: 19px;
 }
 
 .titles-text {
 	flex: 1;
-	font-size: 19px;
-	position: absolute;
-  	top: 34px;
-  	left: 87px;
+	position: relative;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	margin-bottom: 10px;
+	top: 20px;
+	font-size: 18px;
 }
 
 .titles-image {
 	flex: 0 1 auto;
-	width: 50px;
 	margin-right: 15px;
 	padding: 5px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.grid-container {
-    columns: 3;
-    column-gap: 26px;
-    padding: 16px;
-    margin: 20px 100px ;
-    border-radius: 15px;
-    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-*/
-}
-
-.grid-item {
-	width: 100%;
-	padding: 20px;
-	margin-bottom: 10px;
-	break-inside: avoid;
-    background-color: #dbdada;
-    border-radius: 15px;
-    text-align: left;
-    font-size: 23px;
-    color: #000000
-}
-
-.grid-item:hover {
-	transform: scale(1.05);
-	margin-bottom: 20px;
-}
-
-.grid-img:hover {
-	transform: scale(1.05);
-	margin-bottom: 20px;
-}
-
-.grid-item img {
-	max-width: 10%;	
-	margin: 10px;
-}
-
-.grid-item-text	{
-	margin-bottom: 40px;
-}
-
-
-.grid-img {
+.titles-image i{
 	position: relative;
-	width: 100%;
-	margin-bottom: 10px;
-	break-inside: avoid;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 30px;
-    color: #fff;
+	top: 30px;
+	left: 1px;
+	font-size: 30px;
 }
 
-.grid-img img {
-	border-radius: 15px;
-	text-align: center;
-	max-width: 100%;	
-	max-height: 100%;
-	object-fit: contain;
+/*=============================Resume============================*/
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.centered  {
-	position: absolute;
- 	top: 50%;
- 	left: 50%;
- 	transform: translate(-50%, -50%);
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #28282B;
+  top: 0;
+  bottom: 0;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
 
 }
 
-@media (max-width: 1200px){
+/* The circles on the timeline */
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -8px;
+  background-color: white;
+  border: 4px solid #DAA520;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
 
+/* The actual content */
+.content {
+	padding-left: 10px;
+  	position: relative;
+}
+
+.content p{
+	margin-top: -8px;
+
+}
+
+.content h5 {
+	color: #DAA520;
+}
+
+.skills-container {
+	background-color: #28282B;
+	border-radius: 16px;
+	padding: 26px;
+	margin: 20px 0px;
+}
+
+.skills-items {
+
+}
+
+.skills-porc {
+	border-radius: 26px;
+	background-color: #1F2021 ;
+	margin: 10px 0px;
+}
+
+.skills-porc-complete {
+	border-radius: 26px;
+	background-color: #DAA520 ;
+	padding: 4px;
+	margin: 10px 0px;
+}
+
+
+/*=============================Main===============================*/
+
+.timeline-container {
 
 }
 
 /*=================================MIS PROYECTOS==============================================*/
 
+/*=============================Main===============================*/
 
-.cards-container {
-	display: flex;
+.filter-container {
 	overflow: hidden;
-	width: 100%;
-	margin: auto;
 }
 
-
-.cards {
-	width: 100%;
-	position: relative;
-	text-align: center;
-	flex: 1; cursor: pointer;
-	transition: 0.5s ease;
-	height: 220px;
+.card {
+ 	box-shadow: 0 7px 11px 0 rgba(0,0,0,0.2);
+ 	border-radius: 16px;
+ 	transition: 0.3s;
+	cursor: pointer; 
+	width: 31.5%; 
 	margin: 5px;
-	background-color: #1F2021;
+	background-color: #28282B; 
+	padding-bottom: 10px;
+	display: none;
+}
+
+.blog-card {
+ 	box-shadow: 0 7px 11px 0 rgba(0,0,0,0.2);
+ 	border-radius: 16px;
+ 	transition: 0.3s;
+	cursor: pointer; 
+	width: 31.5%; 
+	margin: 5px;
+	background-color: #28282B; 
+	padding-bottom: 10px;
+	display: inline-block;
 }
 
 
-.cards:hover {
-	flex: 3;
-	transition: 0.5s ease;
+
+.show {	
+  display: inline-block; 
+
+}
+
+.btn {
+  border: none;
+  outline: none;
+  margin: 0px 5px 5px 6px;
+  background-color: #1F2021;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #dbdada ;
+  padding: 10px; 
+}
+
+.btn:hover {
+
+background-color: #28282B; 
+
+}
+
+.btn.active {
+  color: #DAA520;
+
+}
+
+
+.blog-card img {
+	height: 200px;
+	object-fit: cover;
+	border-radius: 16px 16px 0px 0px;
+	margin-bottom: 10px;
+}
+
+.blog-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  scale: 97%;
+}
+
+.card img {
+	height: 200px;
+	object-fit: cover;
+	border-radius: 16px 16px 0px 0px;
+	margin-bottom: 10px;
+}
+
+.card p {
+	color: grey;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  scale: 97%;
+}
+
+/* Add some padding inside the card container */
+.card-container {
+  padding: 2px 26px;
+}
+
+
+
+/*=====================================Contactos========================*/ 
+
+/*======================================main========================*/
+.map {
+	padding-bottom: 10px;
+}
+
+input[type=text], select, textarea {
+  background-color: #28282B;
+  color: white;
+
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #1F2021; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+  background-color: #28282B;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+
+input[type=submit]:hover {
+  background-color: #28282B;
+
+
+}
+
+option, select {
+}
+
+textarea {
+	height: 150px;
+	color: white;
+
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+
+}
+
+
+/*============================Mobile===========================*/
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: blue;
+  }
 }
