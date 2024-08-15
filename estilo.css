@@ -1,6 +1,6 @@
 * {
 	box-sizing: border-box;
-
+	line-height: 24px;
 }
 
 body {
@@ -13,47 +13,51 @@ body {
 }
 
 i {
+	display: inline-block;
 	color: #DAA520;
 }
 
+a {
+	text-decoration: none;
+	color: #dbdada ;
+}
+
+article i {
+	position: relative;
+	left: -10px;
+}
+
+article h2{
+	margin-left: 5px;
+	display: inline-block;
+}
 #root {
 	display: flex;
-}
-.header {
-	font-size: 20px;
 }
 
 .menu {
     display: inline-block;
-    float: right;
-    padding: 15px 20px;
     background-color: #28282B;
-    border-bottom-left-radius: 26px;
-    border-top-right-radius: 26px;
+    padding: 15px 20px;
+    float: right;
+    border-radius: 0px 26px 0px 26px;  
 }
 
 .header__title {
-	padding-left: 50px;
 	display: inline-block;
+	padding-left: 50px;
 }
 
 .header__line {
-	margin: 20px;
 	display: inline-block;
-	background-color: #DAA520 ;
-	margin-left: 120px;
+	background-color:#DAA520 ;
+	margin: 20px 20px 20px 120px;
 	padding: 2px;
-    height: 2px;
     width: 70px;
-}
-
-.nav {
-
 }
 
 .nav__li {
 	display: inline-block;
-	text-align:center;
 	padding: 2px;
 	margin: 12px;
 }
@@ -72,63 +76,48 @@ i {
 
 
 .aside {
+	background-color: #1F2021;
+	display: flex;
+    flex-direction: column;
 	width: 20%;
 	height: 850px;
 	margin: 100px 10px 0px 100px;
 	padding: 30px;
-	background-color: #1F2021;
 	border-radius: 26px;
-	display: flex;
-    flex-direction: column;
-}
-
-.name-container {
-
-}
-.memoji-container {
-	background-color:#28282B;
-	position: relative ;
-	width: 180px;
-	height: 180px;
-	margin: 25px  auto;
-	border-radius: 16px;
-}
-
-.memoji-container img{
-}
-
-.name {
 	text-align: center;
 }
 
+.name-container {
+	
+}
+
+.memoji-container {
+	background-color:#28282B;
+	width: 60%;
+	margin: 25px auto;
+	border-radius: 16px;
+}
+
 .degree {
-	display: inline-block;
-	position: relative;
-	left: 50px;
-	padding: 7px;
-	margin: 12px;
 	background-color: #28282B;
+	width: 57%;
+	padding: 6px;
+	margin: 12px auto;
 	border-radius: 6px;
 }
 
 .aside-line{
 	background-color: #28282B;
 	padding: 2px;
+	margin-bottom: 20px;
 	border-radius: 26px;
 }
 
-
-.contact-container {
-	padding-top: 20px;
-}
-
 .contact-item {
-	 	overflow: hidden;
 	display: flex;
 	position: relative;
-	align-items: center;
 	padding: 20px;
-		
+	font-size: 18px;	
 }
 
 .contact-title {
@@ -139,56 +128,39 @@ i {
 
 .contact-info {
 	flex: 1;
-	font-size: 19px;
 	position: absolute;
-  	top: 54px;
+  	top: 50px;
   	left: 87px;
- 
-}
-
-.contact-image {
-	background-color: #28282B;;
-	flex: 0 1 auto;
-	padding: 12px;
-	outline: 3px solid #28282B;
-	border-radius: 6px;
-
+  	text-align: left;
 }
 
 .contact-image i{
+	background-color: #28282B;;
+	padding: 15px;
+	border-radius: 6px;
 }
-
 
 .socialmedia-container {
 	display: flex;
 	justify-content: center; 
-    align-items: center; 
     margin-top: 10px;
 }
 
 .socialmedialogo {
-
-	margin: 5px;
-	text-align: center;
+	margin: 3px;
+	padding: 5px;
 }
 
 .socialmedialogo i {
-	color: grey;;
-}
-
-.logo {
-	padding: 5px;
-	text-decoration: none;
 	color: grey;
+	text-decoration: none;
 }
 
 /*======================================Main====================================*/
 
 
 .main {
-	position: relative;
 	width: 65%;
-	
 	margin: 100px 10px;
 	background-color: #1F2021;
 	border-radius: 26px;
@@ -202,8 +174,8 @@ i {
 
 .titles-container {
 	position: relative;
-
 }
+
 .titles-item {
 	position: relative;
 	display: inline-flex;
@@ -213,12 +185,13 @@ i {
 	border-radius: 26px;
 	width: 48.7%;
 	height: 140px;
+
 }
 
 .titles-title {
 	flex: 1;
 	position: absolute;
-	left:80px;
+	left: 80px;
 	font-size: 19px;
 }
 
@@ -241,6 +214,7 @@ i {
 .titles-image i{
 	position: relative;
 	top: 30px;
+	left: 1px;
 	font-size: 30px;
 }
 
@@ -264,20 +238,20 @@ i {
 }
 
 /* Container around content */
-.container {
+.timeline-container {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
-  width: 50%;
+
 }
 
 /* The circles on the timeline */
-.container::after {
+.timeline-container::after {
   content: '';
   position: absolute;
-  width: 18px;
-  height: 18px;
-  left: -13px;
+  width: 10px;
+  height: 10px;
+  left: -8px;
   background-color: white;
   border: 4px solid #DAA520;
   top: 15px;
@@ -287,16 +261,24 @@ i {
 
 /* The actual content */
 .content {
-  padding: 20px 30px;
-  background-color: #28282B;
-  position: relative;
-  border-radius: 6px;
+	padding-left: 10px;
+  	position: relative;
+}
+
+.content p{
+	margin-top: -8px;
+
+}
+
+.content h5 {
+	color: #DAA520;
 }
 
 .skills-container {
 	background-color: #28282B;
 	border-radius: 16px;
 	padding: 26px;
+	margin: 20px 0px;
 }
 
 .skills-items {
@@ -331,13 +313,52 @@ i {
 	overflow: hidden;
 }
 
+.card {
+ 	box-shadow: 0 7px 11px 0 rgba(0,0,0,0.2);
+ 	border-radius: 16px;
+ 	transition: 0.3s;
+	cursor: pointer; 
+	width: 31.5%; 
+	margin: 5px;
+	background-color: #28282B; 
+	padding-bottom: 10px;
+	display: none;
+}
+
+.blog-card {
+ 	box-shadow: 0 7px 11px 0 rgba(0,0,0,0.2);
+ 	border-radius: 16px;
+ 	transition: 0.3s;
+	cursor: pointer; 
+	width: 31.5%; 
+	margin: 5px;
+	background-color: #28282B; 
+	padding-bottom: 10px;
+	display: inline-block;
+}
+
+
+
+.show {	
+  display: inline-block; 
+
+}
+
 .btn {
   border: none;
   outline: none;
-  margin: 0px 15px 15px 6px;
+  margin: 0px 5px 5px 6px;
   background-color: #1F2021;
+  border-radius: 6px;
   cursor: pointer;
   color: #dbdada ;
+  padding: 10px; 
+}
+
+.btn:hover {
+
+background-color: #28282B; 
+
 }
 
 .btn.active {
@@ -345,23 +366,17 @@ i {
 
 }
 
-.card {
 
-  /* Add shadows to create the "card" effect */
- 	box-shadow: 0 7px 11px 0 rgba(0,0,0,0.2);
- 	transition: 0.3s;
-	cursor: pointer; 
-	width: 30%; 
-	border-radius: 16px;
-	margin: 5px;
-	background-color: #28282B; 
-	padding-bottom: 10px;
-	display: inline-block;
-
+.blog-card img {
+	height: 200px;
+	object-fit: cover;
+	border-radius: 16px 16px 0px 0px;
+	margin-bottom: 10px;
 }
 
-.show {
-
+.blog-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  scale: 97%;
 }
 
 .card img {
@@ -378,6 +393,7 @@ i {
 /* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  scale: 97%;
 }
 
 /* Add some padding inside the card container */
@@ -396,6 +412,8 @@ i {
 
 input[type=text], select, textarea {
   background-color: #28282B;
+  color: white;
+
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
   border: 1px solid #1F2021; /* Gray border */
@@ -408,26 +426,39 @@ input[type=text], select, textarea {
 
 input[type=submit] {
   background-color: #28282B;
-  color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  color: white;
 }
 
 input[type=submit]:hover {
   background-color: #28282B;
+
+
 }
 
 option, select {
-	color: white;
 }
 
 textarea {
 	height: 150px;
+	color: white;
+
 }
 
 .container {
   border-radius: 5px;
   padding: 20px;
+
+}
+
+
+/*============================Mobile===========================*/
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: blue;
+  }
 }
